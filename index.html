@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="node_modules/popper.js/dist/umd/popper.min.js">
+    </script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js">
+    </script>
+    <script src="fontawesome-free-6.3.0-web/js/all.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main-cont">
+        <nav class="first">
+            <input type="checkbox" id="check">
+            <label for="check">
+                <i class="fas fa-bars" id="btn"></i>
+                <i class="fas fa-times" id="cancel"></i>
+            </label>
+
+            <div class="sidebar">
+                <header>MEGAPLAY</header>
+                <ul class="sidebar-nav">
+                    <li class="li-fa"><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li class="li-fa"><a href="index.html"><i class="fas fa-qrcode"></i> Dashboard</a></li>
+                    <li class="li-fa"><a href="#trending"><i class="fas fa-chart-bar"></i> Trending</a></li>
+                    <li class="li-fa"><a href="#topsong"><i class="fas fa-rocket"></i> Top Songs</a></li>
+                    <li class="li-fa"><a href="#"><i class="fas fa-newspaper"></i> Top Albums</a></li>
+                    <li class="li-fa"><a href="#"><i class="fas fa-music"></i> Playlists</a></li>
+                    <li class="li-fa"><a href="#"><i class="fas fa-memory"></i> Recently Added</a></li>
+                </ul>
+                <nav class="follow-us1">
+                <!-- <h5>Follow Us</h5> -->
+                <i class="fab fa-facebook" style="height: 30px;"></i>
+            <i class="fab fa-twitter" style="height: 30px;"></i>
+            <i class="fab fa-instagram" style="height: 30px;"></i>
+            </nav>
+
+            </div>
+        </nav>
+        <!-- THE MAIN NAV STARTS HERE -->
+        <div class="second">
+            <nav class="header-content" id="header-content">
+                <a href="index.html"><img src="img/artist-musik5.png" alt="" id="header-img"></a>
+                <h2>MEGAPLAY</h2>
+            </nav>
+            <nav class="header-content">
+                <i class="fas fa-search" style="color: white; height: 20px;"></i>
+                <input type="search" placeholder="Artistes, Songs, Albums" class="input-search">
+            </nav>
+            <nav class="app-goog">
+                <img src="img/googlepla.jpg" alt="" class="img-app" style="width: 110px; ">
+                <img src="img/appstore2.png" alt="" class="img-app" style="width: 140px; ">
+                </nav>
+            <nav class="header-content">
+                <ul class="ul-sign">
+                    <li><a href="signin.html" class="ul-sign">Sign in</a></li>
+                    <li><a href="signup.html" class="ul-sign">Sign up</a></li>
+                </ul>
+            </nav>
+            <nav class="header-content" id="upload-btn">
+                <i class="fas fa-upload" style="height: 25px;"></i>
+                <a href="#" class="upload-btn"> Upload</a>
+            </nav>
+        </div>
+    </div>
+    <!-- HERE COMES THE FIRST BODY -->
+    <div class="first-section-on-the-body">
+        <nav class="first-img">
+            <img src="img/phone-musik2.png" alt="" style="width: 200px;">
+            <img src="img/artist-musik6.png" alt="" style="width: 50px; ">
+        </nav>
+        <nav class="texts">
+            <h2>MegaPlay is a home for music</h2>
+            <p>it is created to give you all genres of music
+                free of charge and limitless music sharing and
+                arrtist discovery.</p>
+                <!-- <nav class="app-goog">
+            <img src="img/googlepla.jpg" alt="" class="img-app" style="width: 150px; ">
+            <img src="img/appstore2.png" alt="" class="img-app" style="width: 150px; ">
+            </nav> -->
+            <h3>EXPLORE MEGAPLAY</h3>
+        </nav>
+        <nav class="third-img">
+            <img src="img/artist-musik4.png" alt="" style="width: 50px;">
+            <img src="img/artist-musik3.png" alt="" style="width: 200px; height: 140px;">
+        </nav>
+    </div>
+    <!-- TRENDING SONGS -->
+    <div class="trend-and-card">
+        <div id="trending">
+            <nav class="img-trend">
+                <img src="img/musik.png" alt="" style="width: 50px; ">
+                <h2>NOW TRENDING</h2>
+            </nav>
+            <nav class="img-type">
+                <h2>Music Type: All Type</h2>
+                <i class="fas fa-chevron-down" id="fas-chevron"></i>
+            </nav>
+
+        </div>
+        <!-- CAROUSEL STARTS HERE -->
+        <div class="container mt-3">
+
+            <div id="boot" class="carousel slide" data-ride="carousel">
+
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                    <li data-target="#boot" data-slide-to="0" class="active">
+                    </li>
+                    <li data-target="#boot" data-slide-to="1"></li>
+                    <li data-target="#boot" data-slide-to="2"></li>
+                    <li data-target="#boot" data-slide-to="3"></li>
+                    <li data-target="#boot" data-slide-to="5"></li>
+                </ul>
+
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+
+
+                    <div class="carousel-item active">
+
+                        <img src="img/nickie.png" alt="" style="width: 200px; height: 100px; ">
+                        <p class="text-success">Nicki Minaj <br>
+                            Bad Bitch <br>
+                            by Nicki Minaj</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/flavour.png" alt="" style="width: 200px; height: 100px; ">
+                        <p class="text-success">Flavour <br>
+                            Ashawo <br>
+                            by Flavour</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/drake.png" alt="" style="width: 200px; height: 100px; ">
+                        <p class="text-success">Drake <br>
+                            My solitude <br>
+                            by Drake</p>
+                    </div>
+
+                    <div class="carousel-item">
+
+                        <img src="img/davido.png" alt="boot" style="width: 200px; height: 100px;">
+                        <p class="text-success">Davido <br>
+                            Na Money <br>
+                            by Davido ft Cavemen</p>
+
+                    </div>
+
+                    <div class="carousel-item">
+
+                        <img src="img/Jazz-Musician-PNG-Photo.png" alt="boot" style="width: 200px; height: 100px;">
+                        <p class="text-success">West Band <br>
+                            Konga Styling <br>
+                            by West Band</p>
+
+                    </div>
+
+                </div>
+
+                <a class="carousel-control-prev" href="#boot" data-slide="prev">
+                    <span class="carousel-control-prev-icon">
+                    </span>
+                </a>
+                <a class="carousel-control-next" href="#boot" data-slide="next">
+                    <span class="carousel-control-next-icon">
+                    </span>
+                </a>
+            </div>
+            
+        </div>
+        <div class="all-trending-songs">
+            <a href="#">ALL TRENDING MUSIC</a>
+        </div>
+        <!-- TOP SONGS AND THE ARTISTES -->
+        <div class="top-songs">
+            <div id="topsong">
+                <nav class="trend2">
+                    <img src="img/growth_and_flag_30px.png" alt="" style="width: 50px; ">
+                    <h4>TOP SONGS</h4>
+                </nav>
+                <nav class="type2">
+                    <h4>Music Type: All Type </h4>
+                    <i class="fas fa-chevron-down" style="height: 20px; align-items: center;"></i>
+                </nav>
+            </div>
+            <div class="topsong-artists">
+                <nav class="first-top-song">
+                    <img src="img/burna2.png" alt="" style="width: 320px;  height: 245px;">
+                    <div class="pandfa">
+                    <p>Burna Boy<br>Onyeka<br>
+                    by Burna Boy</p>
+                    <i class="fas fa-play-circle" id="play-circle"></i>
+                    </div>
+                </nav>
+                <nav class="first-top-song">
+                    <img src="img/drake2.webp" alt="" style="width: 330px;  height: 245px;">
+                    <div class="pandfa">
+                    <p>Drake <br>Tablet sucker <br>
+                    by Drake ft Lil Nas</p>
+                    <i class="fas fa-play-circle" id="play-circle"></i>
+                    </div>
+                </nav>
+                <nav class="first-top-song">
+                    <img src="img/beyonce.png" alt="" style="width: 300px; height: 245px;">
+                    <div class="pandfa">
+                    <p>Beyonce <br>Ballot <br>
+                    by Beyonce</p>
+                    <i class="fas fa-play-circle" id="play-circle"></i>
+                    </div>
+                </nav>
+                <nav class="first-top-song">
+                    <img src="img/asake1.webp" alt="" style="width: 300px;">
+                    <div class="pandfa">
+                    <p>Asake <br>Trabaye <br>
+                    by Asake</p>
+                    <i class="fas fa-play-circle" id="play-circle"></i>
+                     </div>
+                </nav>
+                <nav class="first-top-song">
+                    <img src="img/human-musik3.jpg" alt="" style="width: 340px;  height: 245px;">
+                    <div class="pandfa">
+                    <p>Negede <br> Jolly<br>
+                    by Negede ft Konan</p>
+                    <i class="fas fa-play-circle" id="play-circle"></i>
+                    </div>
+                </nav>
+            </div>
+            
+        </div>
+        <div class="all-top-songs">
+            <a href="#">SEE FULL TOP SONGS</a>
+        </div>
+        <div id="topalbum">
+            <div id="topsong">
+                <nav class="trend2">
+                    <img src="img/growth_and_flag_30px.png" alt="" style="width: 50px; ">
+                    <h4>TOP ALBUMS</h4>
+                </nav>
+                <nav class="type2">
+                    <h4>Music Type: All Type</h4>
+                    <i class="fas fa-chevron-down" style="height: 20px; align-items: center;"></i>
+                </nav>
+            </div>
+            <div class="topsong-artists">
+                <nav class="first-top-song">
+                    <img src="img/nickie.png" alt="" style="width: 320px;  height: 245px;">
+                    <div class="pandfa">
+
+                    <p>Nicki Minaj<br>Bad ass bitch<br>
+                    by Nicki Minaj</p>
+                    <i class="fas fa-play-circle" id="play-circle"></i>
+                     </div>
+                </nav>
+                <nav class="first-top-song">
+                    <img src="img/flavour.png" alt="" style="width: 320px;  height: 245px;">
+                    <div class="pandfa">
+
+                    <p>Flavour <br>Oyi <br>
+                    by Flavour</p>
+                    <i class="fas fa-play-circle" id="play-circle"></i>
+                     </div>
+                </nav>
+                <nav class="first-top-song">
+                    <img src="img/wizkid.png" alt="" style="width: 320px; height: 245px;">
+                    <div class="pandfa">
+
+                    <p>Wizkid <br>MLLE <br>
+                    by Wizkid</p>
+                    <i class="fas fa-play-circle" id="play-circle"></i>
+                    </div>
+                </nav>
+                <nav class="first-top-song">
+                    <img src="img/psquare.png" alt="" style="width: 320px; height: 245px;" >
+                    <div class="pandfa">
+                    <p>Psquare <br>Double Trouble <br>
+                    by Psquare</p>
+                    <i class="fas fa-play-circle" id="play-circle"></i>
+                    </div>
+                </nav>
+                <nav class="first-top-song">
+                    <img src="img/drake.png" alt="" style="width: 320px;  height: 245px;">
+                    <div class="pandfa">
+                    <p>Drake <br> Serendipity<br>
+                    by Drake</p>
+                    <i class="fas fa-play-circle" id="play-circle"></i>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="all-top-songs">
+            <a href="#">SEE FULL TOP ALBUMS</a>
+        </div>
+    </div>
+
+    <div class="imgs">
+        <nav class="rolls">
+          <img src="img/Music-Free-PNG-Image.png" alt="" style="width: 150px;">
+          <img src="img/phone-musik5.png" alt="" style="width: 170px;">
+          <img src="img/music.png" alt="" style="width: 200px;">
+        </nav>
+        <nav class="rolls1">
+          <img src="img/Jazz-Musician-PNG-Photo.png" alt="" style="width: 200px;">
+          <nav class="img-ios">
+            <img src="img/colorful-musical-notes-png-15.png" alt="" style="width: 180px;">
+          </nav>
+          <img src="img/phone-musik.png" alt="" style="width: 220px;">
+        </nav>
+    </div>
+    <footer>
+        <div class="footer">
+            <nav class="first-footer">
+                <nav class="img-and-mega">
+                <a href="index.html"><img src="img/artist-musik5.png" alt="" id="footer-img"></a>
+                <h2>MEGAPLAY</h2>
+                </nav>
+                <p>Copyright &copy; 2023</p>
+            </nav>
+            <nav class="first-footer">
+            <h4>Browse</h4>
+            <ul class="footer-ul">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Trending</a></li>
+                <li><a href="#">Top Songs</a></li>
+                <li><a href="#">Top Albums</a></li>
+                <li><a href="#">Playlists</a></li>
+                <li><a href="#">Accounts for you</a></li>
+                <li><a href="#">Recently Added</a></li>
+            </ul>
+            </nav>
+            <nav class="first-footer">
+            <h4>About</h4>
+            <ul class="footer-ul1">
+                <li><a href="#">Get in touch</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Wordpress</a></li>
+                <li><a href="#">Report a Vulnerability</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+            </nav>
+            <nav class="first-footer">
+            <h4>Resources</h4>
+            <ul class="footer-ul1">
+                <li><a href="#">Legal & DMCA</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Press Kit</a></li>
+                <li><a href="#">Style Guide</a></li>
+            </ul>
+            </nav>
+        </div>
+        <div class="last-footer">
+            <nav class="follow-us">
+            <!-- <h4>Follow Us:</h4> -->
+            <i class="fab fa-facebook" style="height: 30px;"></i>
+            <i class="fab fa-twitter" style="height: 30px;"></i>
+            <i class="fab fa-instagram" style="height: 30px;"></i>
+            </nav>
+            <nav class="follow-us">
+                <img src="img/appstore2.png" alt="" class="follow-app" id="follow-app">
+                <img src="img/googlepla.jpg" alt="" class="follow-app">
+
+            </nav>
+            
+        </div>
+    </footer>
+</body>
+
+</html>

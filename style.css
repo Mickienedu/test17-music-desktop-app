@@ -1,0 +1,416 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: black;
+}
+/* MAIN HEADER/NAV CONTAINER STARTS */
+.main-cont{
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+    /* gap: 15rem; */
+    background: #153932;
+}
+#check{
+    display: none;
+}
+label #btn, label #cancel{
+   position: absolute;
+   cursor: pointer;
+   /* background: #300202; */
+   border-radius: 3px;
+}
+label #btn{
+    left: 40px;
+    top: 16px;
+    font-size: 30px;
+    color: white;
+    padding: 6px 12px;
+    transition: all .5s;
+}
+label #cancel{
+    position: fixed;
+    z-index: 1111;
+    left: 0px;
+    top: 17px;
+    font-size: 30px;
+    color:  #153932;
+    background: none;
+    padding: 4px 9px;
+    transition: all .5s ease;
+
+}
+#check:checked ~ .sidebar{
+    left: 0;
+}
+#check:checked ~ .label #btn{
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+}
+#check:checked ~ .label #cancel{
+    left: 195px;
+}
+.sidebar{
+    position: fixed;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: #153932;
+    transition: all .5s ease;
+}
+.sidebar header{
+    margin-top: -2rem;
+    font-size: 22px;
+    color: white;
+    line-height: 70px;
+    background: darkslategray;
+    user-select: none;
+    padding-left: 50px;
+}
+/* .sidebar-nav{
+    display: grid;
+    line-height: 200px;
+} */
+.sidebar-nav a{
+    text-decoration: none;
+    /* gap: 3rem; */
+}
+/* fontawesome and sidebar navs */
+.li-fa a{
+     display: block;
+     height: 100%;
+     width: 100%;
+     line-height: 100px;
+     font-size: 20px;
+     color: white;
+     padding-left: 10px;
+     box-sizing: border-box;
+     border-top: 1px solid rgb(67, 98, 77);
+     border-bottom: 1px solid rgb(112, 149, 122);
+     transition: 2s;
+}
+.li-fa:hover {
+    padding-left: 20px;
+}
+.li-fa{
+    margin-right: 16px;
+}
+.follow-us1{
+    display: flex;
+    justify-content: center;
+    color: white;
+    gap: 1rem;
+}
+/* THE MAIN NAV STARTS HERE */
+.second{ 
+    display: flex;
+    gap: 10rem;
+    margin-top: 20px;
+}
+/* ALL THE CONTENT ON THE HEADER */
+.header-content{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+#header-img{
+    width: 30px;
+    border-radius: 3px; 
+    align-items: center; 
+    margin-top: -1rem;
+}
+/* THE SIGN IN AND SIGN UP ON THE HEADER */
+.ul-sign{
+    display: flex;
+    gap: 2rem;
+    color: white;
+    font-size: 25px;
+}
+.ul-sign a{
+    text-decoration: none;
+}
+/* TH SEARCH SPACE ON THE HEADER */
+.input-search{
+    color: rgb(92, 87, 87);
+    background: #153932;
+    border: none;
+    font-size: 20px;
+}
+.upload-btn{
+    font-size: 20px;
+    border: none;
+    color: white;
+}
+#upload-btn{
+    padding: 5px;
+    gap: 0.3rem;
+}
+#upload-btn a{
+    text-decoration: none;
+    font-size: 25px;
+}
+.first-section-on-the-body{
+    display: flex;
+    justify-content: space-around; 
+    padding: 20px;
+    background: #300202;
+}
+.texts{
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    width: 500px;
+    color: white;
+}
+.app-goog{
+   display: flex;
+   justify-content: center;
+   gap: 2rem;
+   height: 35px;
+} 
+
+#trending{
+    display: flex;
+    justify-content: center;
+    gap: 20rem;
+    margin-bottom: -5rem;
+   
+}
+.img-trend, .img-type{
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    color: white;
+}
+.img-trend h2{
+    font-size: 15px;
+}
+.img-type h2{
+    font-size: 15px;
+}
+.img-trend img{
+    margin-top: -1rem;
+}
+#fas-chevron{
+    height: 20px;
+     align-items: center;
+     margin-top: -0.6rem;
+}
+.trend-and-card{
+    background: #153932;
+    padding: 20px;
+    box-shadow: 1px 1px 1px 0.5px rgb(62, 61, 61);
+}
+              /* Customizing the carousel  */
+.carousel-indicators .active {
+    background-color: #ffffff;
+}
+
+.carousel-indicators li {
+    background-color: #ffffff;
+    margin-bottom: -9rem;
+}
+.carousel-control-prev-icon{
+    background-color: black;
+    width: 50px;
+    height: 20px;
+}
+.carousel-control-next-icon{
+    background-color: black;
+    width: 50px;
+    height: 20px;
+}
+
+.active{
+    display: grid;
+    text-align: center;
+    align-items: center;  
+}
+.text1{
+    color: red;
+    margin: 0;
+}
+.text-success{
+    display: grid;
+    text-align: start;
+    /* background: white; */
+    background:  rgb(196, 191, 191);
+    margin-left: 34rem;
+    margin-right: 34rem;
+    font-size: 15px;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* .carousel-item p{
+    color: black;
+} */
+#boot{
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+}
+/* ALL TRENDING SONGS */
+.all-trending-songs{
+    display: grid;
+    justify-content: center;
+    list-style: none;
+}
+.all-trending-songs a{
+    color: white;
+    margin-top: -4rem;
+}
+/* TOP SONGS */
+#topsong{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+    gap: 30rem;
+}
+.trend2{
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 15px;
+    gap: 1rem;
+}
+.type2{
+    display: flex;
+    color: white;
+    gap: 1rem;
+}
+.trend2 h4, .type2 h4{
+    font-size: 18px;
+}
+.topsong-artists{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    /* box-sizing: 1px 1px 1px 1px;
+    transition: 0.2s; */
+}
+.first-top-song p{
+    /* background: rgb(196, 191, 191); */
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.all-top-songs{
+    display: grid;
+    justify-content: center;
+    list-style: none;
+}
+.all-top-songs a{
+    color: white;
+    margin-top: 2rem;
+}
+/* LAST IMGS */
+.imgs{
+    margin-top: 2rem;
+    display: grid;
+}
+.rolls{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+}
+.rolls1{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+}
+.img-ios{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.ios-android{
+    color: white;
+    line-height: 80px;
+    font-weight: lighter;
+    font-size: 17px;
+}
+.pandfa{
+    display: flex;
+    /* justify-content:space-evenly; */
+    align-items: center;
+    gap: 10rem;
+    background: rgb(196, 191, 191);
+    height: 80px;
+}
+#play-circle {
+    color: green;
+    text-align: end;
+    height: 40px;
+}
+/* FOOTER STARTS HERE */
+.footer{
+    margin-top: 8rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+/* img logo */
+#footer-img {
+    width: 30px;
+    border-radius: 3px;
+    margin-top: -0.5rem;
+}
+
+.img-and-mega{
+    display: flex;
+}
+.first-footer p{
+    margin-top: -9rem;
+    font-size: large;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.first-footer{
+    display: grid;
+    text-align: start;
+    line-height: 40px;
+    list-style: none;
+    color: white;
+}
+.first-footer h4{
+    margin-left: 30px;
+    font-size: 25px;
+    font-weight: bold;
+}
+.footer-ul{
+    list-style: none;
+}
+.footer-ul1{
+    list-style: none;
+    margin-top: -5rem;
+}
+.footer-ul a, .footer-ul1 a{
+    text-decoration: none;
+    color: white;
+    font-size: large;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.last-footer{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-around;
+}
+.follow-app{
+    width: 150px;
+}
+#follow-app{
+    width: 180px;
+}
+.follow-us{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    color: white;
+}
